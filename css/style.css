@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+:root{
+    --primary-red : #DB202C;
+}
+body{
+    background-color: black;
+}
+.hero_section{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0.8) , rgba(0,0,0,0.5)) , url("../images/hero-background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 650px;
+}
+.main_character_cover{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 250px;
+    max-width: 60%;
+}
+.main_character_cover img{
+    width: 100%; height: 100%;
+}
+.main_character_cover::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0) , transparent);
+}
+.heroSection_content{
+    margin-top: 120px;
+}
+.heroSection_content > a{
+    color: var(--primary-red);
+    font-size: 20px;
+}
+.heroSection_content > h1.main_heading{
+    color: white;
+    font-weight: 400;
+    line-height: 50px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.heroSection_content > h1.main_heading span{
+    color: inherit;
+    font-weight: 600;
+}
+button.primary_button{
+    background-color: var(--primary-red);
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 8px 25px;
+    border-radius: 7px;
+    border: none;
+}
+.movies_gallary .logo_cover{
+    max-width: 90px;
+}
+.movies_gallary .subheading{
+    font-size: 36px;
+    margin: 20px 0;
+    color: white;
+    font-weight: 300;
+}
+.movies_gallary .subheading span{
+    font-size: 36px;
+    font-weight: 600;
+}
+button.primary_outline_button{
+    border: 1px solid var(--primary-red) !important;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 8px 25px;
+    border-radius: 7px;
+    border: none;
+}
+.gallary_heading{
+    color: #9E9E9E;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 40px;
+}
+.gallary_carousel .gallary_image{
+    max-width: 280px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.gallary_carousel .gallary_image img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 280px;
+}
+.gallary_carousel{
+    margin-bottom: 100px;
+}
+.official_release h2{
+    color: #9E9E9E;
+    font-size: 20px;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 28px;
+}
+.official_release h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    margin: 15px auto;
+}
+.we_prasents{
+    margin-top: 80px;
+}
+.tumbnail_image{
+    max-width: 340px;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.tumbnail_image > img{
+    width: 100%;
+}
+.tumbnail_image .hover{
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: all linear 0.2s;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.tumbnail_image:hover .hover{
+    padding: 40px 30px;
+    height: 100%;
+}
+.tumbnail_image .hover span h1 , .tumbnail_image .hover span h4{
+    color: white;
+}
+
+.tumbnail_image .hover span h1{
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+}
+.tumbnail_image .hover span h4{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+.instagram_icon_hover{
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+.footer{
+    padding: 40px 0 10px 0;
+}
+.footer h5{
+    font-size: 16px;
+    color: #757575;
+}
+.modelbox_back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+.model_box{
+    background-color: #141414;
+    border-radius: 7px;
+    max-width: 500px;
+    width: 90%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+}
+.close_modelbox{
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+}
+.modelbox_heading{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.input_feild{
+    margin-bottom: 10px;
+}
+.input_feild input{
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    padding: 8px 16px 8px 16px;
+    font-size: 20px;
+}
+.input_feild input::placeholder{
+    color: white;
+}
+.input_feild button{
+    font-size: 16px;
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+}
+@media screen and (min-width: 415px){
+    .hero_section{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0.8) , rgba(0,0,0,0.5)) , url("../images/hero-background-image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+        height: 750px;
+    }
+    .main_character_cover{
+        height: 400px;
+        max-width: 70%;
+    }
+}
+@media screen and (min-width: 768px){
+    .heroSection_content > h1.main_heading{
+        color: white;
+        font-weight: 400;
+        line-height: 72px;
+        font-size: 56px;
+        text-transform: uppercase;
+    }
+    .main_character_cover{
+        height: 600px;
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .main_character_cover{
+        height: 100%;
+        max-width: 70%;
+    }
+}

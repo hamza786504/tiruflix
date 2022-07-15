@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+:root{
+    --primary-red : #DB202C;
+}
+.video_page_back{
+    background: linear-gradient(rgba(0,0,0,0.9) , rgba(0,0,0,0.9)) , url("../images/hero-background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+    height: auto;
+}
+.logo_cover{
+    margin-top: 30px;
+    width: 100px;
+}
+.logo_cover img{
+    width: 100%;
+}
+.video_page_back h1.heading{
+    color: white;
+    /* font-size: 56px; */
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+.video_page_back h1.heading span{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.video_box{
+    width: 100%;
+    height: 250px;
+    margin: 30px auto;
+}
+.primary_button{
+    color: white;
+    background-color: var(--primary-red);
+    border: none;
+    font-size: 18px;
+}
+
+
+@media screen and (min-width: 400px) {
+    .video_page_back h1.heading{
+        font-size: 56px !important;
+    }
+}
+@media screen and (min-width: 679px) {
+    .video_box{
+        height: 400px;
+        margin: 30px auto;
+    }
+}
+@media screen and (min-width: 992px) {
+    .video_box{
+        height: 600px;
+        margin: 30px auto;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .video_box{
+        height: 800px;
+        margin: 30px auto;
+    }
+}
